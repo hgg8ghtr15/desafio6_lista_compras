@@ -1,0 +1,19 @@
+.input {
+  width: 100%;
+  border-radius: 8px;
+  padding-block: 11px;
+  padding-left: 18px;
+  border: 2px solid var(--border-primary);
+  color: var(--content-placeholder);
+  background-color: var(--background-secondary);
+
+  &:hover {
+    border-color: var(--border-hover);
+  }
+  &:focus, &:active {
+    border-color: var(--color-brand);
+    color: var(--content-primary);
+    outline: none;
+  }
+}
+

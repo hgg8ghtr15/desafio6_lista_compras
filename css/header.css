@@ -1,0 +1,22 @@
+header{
+    height: 150px;
+    margin: auto;
+    padding-top: 20px;
+    align-items: center;
+    /* justify-items: center; */
+
+    position: relative;
+
+    & img{
+        width: 155px;
+        /* position: absolute; */
+        /* margin: auto; */
+    }
+
+    & a{
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        color: var(--color-brand);
+    }
+}

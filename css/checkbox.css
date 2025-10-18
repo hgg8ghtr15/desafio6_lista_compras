@@ -1,0 +1,41 @@
+/* Estilo para cada linha/label do checkbox */
+.custom-checkbox {
+  display: flex;
+  /* width: 100%; */
+  align-items: center;
+  gap: 0.75rem;
+  /* color: var(); */
+  cursor: pointer;
+
+  /* 1. ESCONDENDO O CHECKBOX ORIGINAL DE FORMA ACESSÍVEL */
+  & input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  /* 2. CRIANDO O NOSSO CHECKBOX CUSTOMIZADO (A CAIXINHA) */
+  & .checkmark {
+    display: block;
+    height: 16px;
+    width: 16px;
+    min-width: 16px; /* Garante que não encolha */
+    background-image: url(../assets/icon/Default.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    transition: all 0.2s ease; /* Transição suave */
+  }
+
+    /* 3. efeito quando passa */
+  & input[type="checkbox"]:hover + .checkmark {
+    background-image: url(../assets/icon/hover.svg);
+  }
+    /* 4. Efeito quando seleciona */
+  & input[type="checkbox"]:checked + .checkmark {
+    background-image: url(../assets/icon/selected.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
