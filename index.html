@@ -14,10 +14,26 @@
     />
   </head>
   <body>
-    <div class="flex mesnsagem aparecer">
+    <div class="flex erro" id="erro">
       <div class="flex">
         <img src="assets/icon/informacao.svg" alt="" />
         <p>O item foi removido da lista</p>
+      </div>
+      <img src="assets/icon/fechar.svg" alt="" />
+    </div>
+
+    <div class="flex sucesso" id="sucesso">
+      <div class="flex">
+        <img src="assets/icon/informacao.svg" alt="" />
+        <p>O item foi adicionado com sucesso!</p>
+      </div>
+      <img src="assets/icon/fechar.svg" alt="" />
+    </div>
+
+    <div class="flex alerta" id="alerta">
+      <div class="flex">
+        <img src="assets/icon/informacao.svg" alt="" />
+        <p>Selecione um item para excluir!</p>
       </div>
 
       <img src="assets/icon/fechar.svg" alt="" />
@@ -28,35 +44,35 @@
       <a href="#" class="font-link"> Voltar</a>
     </header>
 
-
     <main class="container flex-col">
-      <form action="">
+      <form>
         <fieldset>
           <legend class="font-title">Compras da semana</legend>
           <div class="flex input-grup">
             <input
               type="text"
               name=""
-              id=""
+              id="inputItem"
               class="input label"
               placeholder="Adicione um novo Item"
             />
-            <button class="button">Adicionar Item</button>
+            <button class="button" type="submit">Adicionar Item</button>
           </div>
         </fieldset>
         <fieldset>
-          <ul class="font-p">
+          <ul class="font-p" id="lista">
             <li class="flex">
               <label class="custom-checkbox">
-                <input type="checkbox" name="itemNovo" id="" class="checkbox" />
+                <input type="checkbox" name="item1" id="" class="checkbox" />
                 <span class="checkmark"></span>
                 <p>Pão de forma</p>
               </label>
               <img src="assets/icon/deletar.png" alt="" />
             </li>
+
             <li class="flex">
               <label class="custom-checkbox">
-                <input type="checkbox" name="itemNovo" id="" class="checkbox" />
+                <input type="checkbox" name="item2" id="" class="checkbox" />
                 <span class="checkmark"></span>
                 <p>Café preto</p>
               </label>

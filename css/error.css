@@ -1,4 +1,4 @@
-.mesnsagem {
+.erro {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -21,8 +21,56 @@
     width: 20px;
   }
 }
+
+.sucesso {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 44px;
+  border-radius: 8px;
+  background-color: var(--color-sucesso);
+  padding-inline: 12px;
+  color: var(--always-white);
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  opacity: 0;
+  & div {
+    gap: 8px;
+  }
+  & img {
+    width: 20px;
+  }
+  & img[src*="fechar"] {
+    width: 20px;
+  }
+}
+.alerta {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 44px;
+  border-radius: 8px;
+  background-color: var(--color-alerta);
+  padding-inline: 12px;
+  color: var(--always-white);
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  opacity: 0;
+  & div {
+    gap: 8px;
+  }
+  & img {
+    width: 20px;
+  }
+  & img[src*="fechar"] {
+    width: 20px;
+  }
+}
+
 .aparecer {
-  animation: desaparecer-e-remover 1s forwards;
+  animation: desaparecer-e-remover 5s forwards;
 }
 
 @keyframes desaparecer-e-remover {
